@@ -1,0 +1,110 @@
+/* register.css - 注册页面样式 */
+
+/* 注册容器布局 */
+.register-container {
+    display: flex;/* 使用弹性盒子布局，方便垂直居中 */
+    min-height: 100vh;/* 最小高度为视口高度，确保页面充满整个屏幕 */
+     align-items: center;/*注册盒子垂直居中 */
+    justify-content: center;/*水平居中 */
+    padding: 20px;
+}
+
+/* 注册容器大小 */
+.register-right {
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+}
+/* 阴影范围大小 */
+.auth-box {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    width: 100%;
+}
+/* 页面标题 */
+.auth-title {
+    text-align: center;/* 字体居中 */
+    font-size: 28px;/* 字体大小 */
+    font-weight: bold;/* 用户注册加粗 */
+    color: #333;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #667eea;/* 用户注册下面那条线 */
+}
+
+/* 表单样式 */
+#register-form {
+    margin-bottom: 20px;
+}
+/* 用户名，手机号，密码和输入框样式 */
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+ /* 表单标签样式 */
+.form-group label {
+    display: flex;/* 弹性盒子布局，使图标和文字对齐 */
+    align-items: center;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+    font-size: 14px;
+}
+/* 输入框样式 */
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 14px;
+    transition: all 0.3s;/* 输入框样式 */
+    background-color: #f8f9fa;/* 框框背景颜色 */
+}
+/* 当输入信息时，框框的变化 */
+.form-group input:focus {
+    border-color: #667eea;/* 边框颜色变色 */
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    outline: none;
+    background-color: white;
+}
+/* 注册按钮 */
+.btn-primary {
+    background-color: #667eea;
+    color: white;/* 字体颜色 */
+    border: none;/* 没有边框 */
+   padding: 12px; /* 按钮宽度 */
+    font-size: 16px; /*字体大小 */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+     background-color: #5a6fd8;/*鼠标放上去颜色会变成这个色 */
+}
+
+.btn-primary:active {
+    transform: translateY(1px);
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+/* 登录链接 */
+.auth-links {
+    text-align: center;/* 字体居中 */
+    font-size: 14px;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.login-link {
+    color: #667eea;
+}
+
+.login-link:hover {
+    text-decoration: underline;/* 鼠标到‘立即登录’时有下横线 */
+}

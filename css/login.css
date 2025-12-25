@@ -1,0 +1,115 @@
+/* login.css - 登录页面特有样式 */
+
+/* 登录容器布局 */
+.login-container {
+     display: flex;/*使用弹性盒子布局 */
+    min-height: calc(100vh - 80px);/* 高度为视窗高度减去顶部导航栏高度 */
+    background-color: #f8f9fa;
+}
+
+/* 右侧登录表单区域 */
+.login-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     padding: 40px;/*内边距 */
+    background-color: white;
+}
+
+.auth-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background-color: white;
+     border-radius: 12px;/*圆角 */
+     /* 阴影 */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.auth-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #ff6b6b;
+}
+
+/* 表单样式 */
+/* 底部外边距：与下方内容分隔 */
+#login-form {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    /* 组间距：每个输入项之间20px间距 */
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    color: #555;
+    /* 中等字重：500字重 */
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+/* 输入框焦点状态 */
+.form-group input:focus {
+    border-color: #ff6b6b;
+    box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.1);
+    /* outline: none; */
+}
+
+/* 登录按钮 */
+.btn-primary {
+    margin-top: 20px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #ff5252;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+/* 注册链接区域 */
+.auth-links {
+    text-align: center;/* 文本居中*/
+    color: #666;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.register-link {
+    color: #ff6b6b;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,227 @@
+/* cart.css - 购物车页面样式 */
+
+body {
+    font-family: "Microsoft YaHei", Arial, sans-serif;
+    background-color: #fdfdfd;
+    color: #0b0b0b;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #0078d7;
+    margin-bottom: 30px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* 表格样式 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+th {
+    color: #888;
+    font-weight: normal;
+}
+
+td img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    background-color: #333;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.item-name-cell {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.price {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+/* 数量输入框 */
+.qty-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* + -号 */
+.qty-btn {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* 鼠标放上去的变化 */
+.qty-btn:hover {
+    background-color: #555;
+}
+
+/* 删除按钮 */
+.delete-btn {
+    background-color: #d70e00;
+    color: rgb(253, 251, 251);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.delete-btn:hover {
+    background-color: #ff1a1a;
+}
+
+/* 底部结算栏 */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.total-price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-back {
+    background-color: #333;
+    color: white;
+}
+
+.btn-checkout {
+    background: linear-gradient(135deg, #0078d7, #005a9e);
+    color: white;
+}
+
+.empty-cart {
+    text-align: center;
+    padding: 50px;
+    color: #888;
+}
+
+/* 购物车样式 */
+.cart-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cart-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.cart-content {
+    min-height: 300px;
+    margin-bottom: 30px;
+}
+
+.empty-cart {
+    text-align: center;
+    padding: 80px 20px;
+    color: #666;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+/* 加入购物车后的样式 */
+.item-name-cell {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+/* 图片 */
+.item-name-cell img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+/* 数量按钮样式 */
+.qty-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.qty-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+/* 删除按钮样式 */
+.delete-btn {
+    padding: 8px 16px;
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* 价格 */
+.price {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.actions {
+    display: flex;
+    gap: 15px;
+}
+/* 结算按钮 */
+.btn-back {
+    background: #6c757d;
+    color: white;
+    border: none;
+}
+
+.btn-checkout {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+}
