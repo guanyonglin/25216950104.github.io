@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="小兔鲜儿官网，致力于打造全球最大的食品、生鲜电商购物平台。">
+    <meta name="keywords" content="小兔鲜儿,鲜儿,鲜食,生鲜,食品,电商,购物">
+    <title>小兔鲜儿-新鲜、惠民、快捷！</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <script src="./js/index.js"></script>
+    <body>
+  <!-- 快捷导航 -->
+ <div class="shortcut">
+    <div class="wrapper">
+      <ul>
+        <li><a href="login.html" class="login-link">请先登录</a></li>
+        <li><a href="register.html">免费注册</a></li>
+        <li><a href="cart.html">我的订单</a></li>
+        <li><a href="#">会员中心</a></li>
+        <li><a href="#">帮助中心</a></li>
+        <li><a href="#">在线客服</a></li>
+        <li><a href="#"><span class="iconfont icon-mobile-phone"></span> 手机版</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- 头部 -->
+  <div class="header wrapper">
+        <div class="logo">
+          <h1><a href="#"></a></h1>
+        </div>
+        <div class="nav">
+          <ul>
+            <li><a href="#" id="home-nav">首页</a></li>
+            <li><a href="#" id="fresh-nav">生鲜</a></li>
+            <li><a href="#">美食</a></li>
+            <li><a href="#">餐厨</a></li>
+            <li><a href="#">电器</a></li>
+            <li><a href="#">家居</a></li>
+            <li><a href="#">洗护</a></li>
+            <li><a href="#">孕婴</a></li>
+            <li><a href="#">服装</a></li>
+          </ul>
+        </div>
+
+        <div class="search"><!-- 方便css样式设置和js操作 -->
+             <form action="#" method="GET"><!--表单提交后跳转到search.html页面  使用grt方式提交，搜索关键词会显示在url中-->
+                 <input type="text" name="q" placeholder="关咏淋 25216950104" id="search-input"><!--文本输入框 -->
+                 <button type="submit"><span class="iconfont icon-search"></span></button>
+            </form>
+        </div>
+      </div>
+
+  <!-- banner -->
+<div class="banner">
+  <div class="wrapper">
+    <!-- 图片 -->
+    <ul>
+      <li><a href="#"><img src="./uploads/banner_1.png" alt=""></a></li>
+    </ul>
+    <!-- 侧导航 -->
+    <div class="aside">
+      <ul>
+        <li><a href="#">生鲜果蔬<span>水果 蔬菜</span></a></li>
+        <li><a href="#">美食推荐<span>面包 干果</span></a></li>
+        <li><a href="#">数码电子<span>手机 电脑</span></a></li>
+        <li><a href="#">家庭电器<span>电视 冰箱</span></a></li>
+        <li><a href="#">厨房用品<span>厨房电器 餐具</span></a></li>
+        <li><a href="#">居家生活<span>床品 四件套 被枕</span></a></li>
+        <li><a href="#">洗护美妆<span>洗发 洁面 美妆</span></a></li>
+        <li><a href="#">孕婴用品<span>奶粉 玩具 服装</span></a></li>
+        <li><a href="#">服饰穿搭<span>女装 男装</span></a></li>
+        <li><a href="#">日用杂货<span>户外 图书</span></a></li>
+      </ul>
+    </div>
+    <!-- 箭头 -->
+    <a href="#" class="prev"><span></span></a>
+    <a href="#" class="next"><span></span></a>
+    <!-- 圆点 -->
+     <ol>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+     </ol>
+  </div>
+</div>
+
+  <!-- 生鲜商品展示区域 -->
+   <!-- display: none：初始完全隐藏，用户看不到这个区域 -->
+  <div id="fresh-products" class="fresh-products-section" style="display: none;">
+    <div class="wrapper">
+      <div class="products-grid">
+        <div class="product-item">
+          <img src="./uploads/fresh_goods_1.jpg" >
+          <div class="product-info">
+            <h3>三文鱼</h3>
+            <p class="price">￥29.9</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 新鲜好物  25216950104关咏淋-->
+   <div class="goods wrappar">
+    <!-- 标题 -->
+    <div class="title">
+      <h2>新鲜好物<span></span></h2>
+      <a href="#">查看全部</a>
+    </div>
+    <!-- 内容 -->
+    <div class="content ">
+      <ul>
+        <!-- 点击图片加入购物车的功能是通过 onclick 事件实现 -->
+        <li onclick="addToCart('KN95级莫兰迪色防护口罩', 79, './uploads/goods1.png')">
+            <img src="./uploads/goods1.png" alt="口罩" style="cursor: pointer;">
+            <div class="price">
+                <p><a href="#" onclick="event.stopPropagation();">KN95级莫兰迪色防护口罩</a></p>
+                <p>￥79</p>
+            </div>
+        
+        </li>
+        <li onclick="addToCart('紫檀外独板三层普洱茶盒', 566, './uploads/goods2.png')">
+            <img src="./uploads/goods2.png" alt="茶盒" style="cursor: pointer;">
+            <div class="price">
+                <p><a href="#" onclick="event.stopPropagation();">紫檀外独板三层普洱茶盒</a></p>
+                <p>￥566</p>
+            </div>
+        </li>
+      <li>
+        <img src="./uploads/goods3.png" alt="">
+        <div class="price">
+          <p><a href="#">法拉蒙高颜值记事本可定制</a></p>
+          <p>￥58</p>
+        </div>
+      </li>
+      <li>
+        <img src="./uploads/goods4.png" alt="">
+        <div class="price">
+          <p><a href="#">科技布布艺沙发</a></p>
+          <p>￥3579</p>
+        </div>
+      </li>
+      </ul>
+    </div>
+    </div>
+<!-- 在body开始标签后添加 -->
+<div id="cart-message" style="display: none; position: fixed; top: 20px; left: 50%; transform: translateX(-50%); padding: 12px 24px; background: #51cf66; color: white; border-radius: 25px; font-weight: bold; z-index: 1000;"></div>
+
+  <!-- 版权区域 25216950104关咏淋-->
+  <div class="footer">
+    <div class="wrapper">
+      <div class="top">
+        <ul>
+          <li><a href="#"><span></span>价格亲民</a></li>
+          <li><a href="#"><span></span>物流快捷</a></li>
+          <li><a href="#"><span></span>品质新鲜</a></li>
+          <li><a href="#"><span></span>售后无忧</a></li>
+        </ul>
+      </div>
+      <div class="bottem">
+          <dl>
+          <dt>购物指南</dt>
+          <dd><a href="#">购物流程</a></dd>
+          <dd><a href="#">支付方式</a></dd>
+          <dd><a href="#">售后规则</a></dd>
+        </dl>
+        <dl>
+          <dt>配送方式</dt>
+          <dd><a href="#">配送运费</a></dd>
+          <dd><a href="#">配送范围</a></dd>
+          <dd><a href="#">配送时间</a></dd>
+        </dl>
+        <dl>
+          <dt>关于我们</dt>
+          <dd><a href="#">平台规则</a></dd>
+          <dd><a href="#">联系我们</a></dd>
+          <dd><a href="#">问题反馈</a></dd>
+        </dl>
+        <dl>
+          <dt>售后服务</dt>
+          <dd><a href="#">售后政策</a></dd>
+          <dd><a href="#">退款说明</a></dd>
+          <dd><a href="#">取消订单</a></dd>
+        </dl>
+        <dl>
+          <dt>服务热线</dt>
+          <dd><a href="#">在线客服 <span class="iconfont icon-customer-service"></span></a></dd>
+          <dd><a href="#">客服电话 400-0000-000</a></dd>
+          <dd><a href="#">工作时间 周一至周日 8:00-18:00</a></dd>
+        </dl>
+        <div class="right">
+          <ul>
+            <li>
+              <img src="./uploads/wechat.png" alt="">
+              <p>微信公众号</p>
+            </li>
+            <li>
+              <img src="./uploads/wechat.png" alt="">
+              <p>APP下载二维码</p>
+            </li>
+          </ul>
+        </div> 
+      </div>
+        <!-- 版权 copyright -->
+      <div class="copyright">
+        <p>
+          <a href="#">关于我们</a> &nbsp|&nbsp
+          <a href="#">帮助中心</a> &nbsp|&nbsp
+          <a href="#">售后服务</a> &nbsp|&nbsp
+          <a href="#">配送与验收</a> &nbsp|&nbsp
+          <a href="#">商务合作</a> &nbsp|&nbsp
+          <a href="#">搜索推荐</a> &nbsp|&nbsp
+        </p>
+        <p><a href="#">关咏淋 25216950104</a></p>
+      </div>
+    </div>
+ </div>
+</body>
+</html>

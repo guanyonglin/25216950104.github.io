@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册 - 小兔鲜儿</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/auth.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./css/register.css"> <!-- 注册页面样式 -->
+</head>
+<body>
+    <!-- 注册主体 -->
+    <div class="register-container">
+        <!-- 注册表单 -->
+       <div class="register-right">
+            <div class="auth-box">
+                <h2 class="auth-title">用户注册</h2>
+                <form id="register-form">
+                    <!-- <label>：输入框的"名字标签"
+                    <input>：让用户输入内容的"框" -->
+                    <!-- 用户名 -->
+                    <div class="form-group">
+                        <label for="reg-username">
+                            用户名
+                        </label>
+                        <input type="text" id="reg-username" name="username" 
+                                placeholder="请输入用户名" > <!-- 框里面的文本 -->
+
+                    </div>
+                    
+                    <!-- 手机号 -->
+                    <div class="form-group">
+                        <label for="reg-phone">
+                            手机号
+                        </label>
+                        <input type="tel" id="reg-phone" name="phone" 
+                               placeholder="请输入手机号" >
+                    </div>
+                    
+                    <!-- 密码 -->
+                    <div class="form-group">
+                        <label for="reg-password">
+                            密码
+                        </label>
+                        <input type="password" id="reg-password" name="password" 
+                               placeholder="请输入密码" >
+                    </div>
+
+                    <!-- 提交按钮 -->
+                    <button type="submit" class="btn btn-primary ">
+                        <i class="#"></i>
+                         立即注册
+                    </button>
+
+                    <!-- 登录链接 -->
+                    <div class="auth-links">
+                        已有账号？<a href="login.html" class="login-link">立即登录</a><!-- 跳转到登录页 -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript文件引入 -->
+    <script src="./js/register.js"></script>
+</body>
+</html>

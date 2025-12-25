@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>购物车 - Red Spider Lily</title>
+<link rel="stylesheet" href="./css/cart.css">
+</head>
+<body>
+
+  <div class="cart-container">
+        <h1>🛒 我的购物车</h1>
+        
+        <div id="cart-content" class="cart-content">
+            <!-- 购物车为空时的显示 -->
+            <div class="empty-cart">购物车空空如也，快去选购吧！</div>
+            
+            <!-- 购物车有内容时的表格结构 -->
+            <table id="cart-table" style="display: none;">
+                <thead>
+                    <tr>
+                        <th width="40%">商品信息</th>
+                        <th width="15%">单价</th>
+                        <th width="20%">数量</th>
+                        <th width="15%">小计</th>
+                        <th width="10%">操作</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- 购物车商品行将通过JS动态插入到这里 -->
+                </tbody>
+            </table>
+        </div>
+
+  <div class="container">
+    <div class="footer" id="cart-footer">
+      <div class="total-section">
+        总计: <span class="total-price" id="total-price">¥ 0</span>
+      </div>
+      <div class="actions">
+        <a href="index.html" class="btn btn-back">继续购物</a>
+        <button class="btn btn-checkout" onclick="goToPayment()">去结算</button>
+      </div>
+    </div>
+  </div>
+<script src="./js/cart.js"></script>
+</body>
+</html>
